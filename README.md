@@ -1,6 +1,6 @@
 # Aprende lógica de programación de una vez (pseudocódigo)
 
-0. [Introducción a la programación]
+0. [Sobre este libro]
 
 ## Introducción a la programación
 

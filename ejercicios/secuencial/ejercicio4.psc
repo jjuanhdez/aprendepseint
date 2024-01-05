@@ -19,7 +19,7 @@ Proceso Calcular
 	Leer num1;
 	Escribir Sin Saltar "Introduce el número 2:";
 	Leer num2;
-	Escribir "La suma es ", num1+num2;
+	Escribir "La suma es  ", num1+num2;
 	Escribir "La resta es ", num1-num2;
 	Escribir "El producto es ", num1*num2;
 	Escribir "La división es ", num1/num2;

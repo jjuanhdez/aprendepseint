@@ -36,7 +36,7 @@ Proceso CalcularHoraLlegada
 	seginicial <- horapartida * 3600 + minpartida*60 + segpartida;
 	//Le sumo los segundos que he tardado
 	segfinal <- seginicial + segviaje;
-	//Convierto los segundos totales a hora, minúto y segundos
+	//Convierto los segundos totales a horas, minutos y segundos
 	horallegada <- trunc(segfinal / 3600);
 	minllegada <- trunc((segfinal % 3600) / 60);
 	segllegada <- (segfinal % 3600) % 60;
