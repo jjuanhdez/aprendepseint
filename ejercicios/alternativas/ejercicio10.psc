@@ -49,6 +49,7 @@ Proceso PosicionCircunferencias
 	Leer r2;
 	
 	distancia <- raiz((x2-x1)^2 + (y2-y1)^2);
+	
 	//circunferencias exteriores
 	//La distancia entre los centros, d, es mayor que la suma de los radios.
 	Si distancia > (r1 + r2) Entonces

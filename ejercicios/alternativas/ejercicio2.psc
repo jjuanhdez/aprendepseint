@@ -20,10 +20,10 @@ Proceso CalcularPositivoNegativoCero
 	Definir num como Entero;
 	Escribir "Dime un número: ";
 	Leer num;
-	Si num=0 Entonces
+	Si num = 0 Entonces
 		Escribir "Es igual a 0";
 	SiNo
-		Si num>0 Entonces
+		Si num > 0 Entonces
 			Escribir "Es positivo";
 		SiNo
 			Escribir "Es negativo";

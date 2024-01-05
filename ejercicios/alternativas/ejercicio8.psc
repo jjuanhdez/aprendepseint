@@ -33,15 +33,15 @@ Proceso ComprobarNotaEdadSexo
 	Leer sexo;
 	Si nota >= 5 Y edad >= 18 Entonces
 		Si Mayusculas(sexo) = "F" Entonces
-			Escribir "Aceptada";
+			Escribir "ACEPTADA";
 		SiNo
 			Si Mayusculas(sexo) = "M" Entonces
-				Escribir "Posible";
+				Escribir "POSIBLE";
 			SiNo
-				Escribir "No Aceptada";
+				Escribir "NO ACEPTADA";
 			FinSi
 		FinSi
 	SiNo
-		Escribir "No Aceptada";
+		Escribir "NO ACEPTADA";
 	FinSi
 FinProceso
