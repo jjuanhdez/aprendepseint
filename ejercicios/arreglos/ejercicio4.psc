@@ -23,9 +23,9 @@ Proceso VectorPositivo
     indice <- 0;
     tam_vector <- 10;
     //Recorro el vector y voy inicializando sus elementos
-    //No uso un para, porque si introduzco un número negativo salimos del bucle.
-    //También termino el bucle si introduzco todos los elementos de vector.
-    //El número negativo me sirve de indicador de que hasta esa posición el vector tiene elemento-
+    //No uso un Para, porque si introduzco un número negativo salimos del bucle.
+    //Termina el bucle si introduzco todos los elementos del vector.
+    //Un número negativo sirve de indicador de que hasta esa posición el vector tiene elementos
     Repetir
         Escribir Sin Saltar "Introduce un número en el vector. Número ", indice+1;
         Leer vector[indice];
