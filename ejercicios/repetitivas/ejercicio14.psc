@@ -16,7 +16,7 @@
 //1. Inicializo las variables kms
 //2. Mientras km1 <> km2
 //3.   Incremento km1
-//4.   Incremento km2
+//4.   Decremento km2
 //5. Mostrar en el km que se encuentran
 //################################################################################
 
