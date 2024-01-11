@@ -21,6 +21,7 @@ Funcion Centrar(cad)
 	Escribir "";
 FinFuncion
 
+
 //################################################################################
 //Crea un programa "EscribirCentrado", que reciba como parámetro un texto y lo
 //escriba centrado en pantalla (suponiendo una anchura de 80 columnas; pista: 

@@ -1,5 +1,5 @@
 //################################################################################
-//Procedimiento "calcularMaxMin": Recibe un vector de enteros, su tamaño, y devuelve
+//Procedimiento "CalcularMaxMin": Recibe un vector de enteros, su tamaño, y devuelve
 //el máximo y el mínimo de los números guardados en el vector.
 //Parámetros de entrada: vector de enteros y tamaño
 //Parámetros de entrada y salida: valor máximo y mínimo
@@ -19,8 +19,9 @@ Funcion CalcularMaxMin(vector, size, max Por Referencia, min Por Referencia)
 	FinPara
 FinFuncion
 
+
 //################################################################################
-//Crea una función "calcularMaxMin" que reciba una arreglo con valores númerico y 
+//Crea una función "CalcularMaxMin" que reciba una arreglo con valores númerico y 
 //devuelva el valor máximo y el mínimo. Crea un programa que pida números por 
 //teclado y muestre el máximo y el mínimo, utilizando la función anterior.
 //################################################################################
@@ -35,7 +36,7 @@ Proceso MaxMin
 	Para i <- 0 Hasta size_lista-1 Hacer
 		lista[i] <- Aleatorio(1,100);
 	FinPara
-	//En la llamada le paso las variables vmax y vmin que se van a modificar en el procedimiento
+	//En la llamada paso las variables vmax y vmin que se van a modificar en el procedimiento
 	CalcularMaxMin(lista, size_lista, vmax,vmin);
 	Escribir "El valor máximo es ", vmax;
 	Escribir "El valor mínimo es ", vmin;

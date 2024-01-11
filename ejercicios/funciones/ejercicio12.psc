@@ -17,6 +17,7 @@ Funcion esvalida <- validarFecha(day, month, year)
 	FinSi
 FinFuncion
 
+
 //################################################################################
 //Función "esBisiesto": Recibe un año y devuelve si es o no bisiesto
 //Parámetros de entrada: año
@@ -31,6 +32,7 @@ Funcion bisiesto <- esBisiesto(year)
 		bisiesto <- Falso;
 	FinSi
 FinFuncion
+
 
 //################################################################################
 //Función "diasDelMes": Recibe un mes y un año y devuelve el número de días que 
@@ -55,8 +57,9 @@ Funcion dias <- diasDelMes(month, year)
 	FinSegun
 FinFuncion
 
+
 //################################################################################
-//Función "calcular_Dia_Juliano": Recibe un día, mes y año y devuelve el día juliano
+//Función "calcularDiaJuliano": Recibe un día, mes y año y devuelve el día juliano
 //correspondiente a esa fecha. El día juliano correspondiente a una fecha es un 
 //número entero que indica los días que han transcurrido desde el 1 de enero del 
 //año indicado. Depende de la función "diasDelMes"
@@ -64,7 +67,7 @@ FinFuncion
 //Dato devuelto: Día juliano
 //################################################################################
 
-Funcion diaj <- calcular_Dia_Juliano(day, month, year)
+Funcion diaj <- calcularDiaJuliano(day, month, year)
 	Definir mes Como Entero;
 	Definir diaj Como Entero;
 	diaj <- 0;
@@ -73,6 +76,7 @@ Funcion diaj <- calcular_Dia_Juliano(day, month, year)
 	FinPara
 	diaj <- diaj + day;
 FinFuncion 
+
 
 //################################################################################
 //Procedimiento "leerFecha": Lee por teclado el día, mes y el año y lo devuelve
@@ -97,6 +101,7 @@ Funcion leerFecha(day Por Referencia, month Por Referencia, year Por Referencia)
 	Hasta Que fechavalida;	
 FinFuncion
 
+
 //################################################################################
 //Vamos a mejorar el ejercicio anterior haciendo una función para validar la fecha. 
 //De tal forma que al leer una fecha se asegure que es válida.
@@ -105,5 +110,5 @@ FinFuncion
 Proceso DiaJuliano
 	Definir d, m, a como Entero;
 	leerFecha(d, m, a);
-	Escribir "Día Juliano: ", calcular_Dia_Juliano(d, m, a);
+	Escribir "Día Juliano: ", calcularDiaJuliano(d, m, a);
 FinProceso

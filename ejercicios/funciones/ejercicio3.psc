@@ -10,6 +10,7 @@ Funcion tmedia <- calcularTemperaturaMedia(temp1, temp2)
 	tmedia <- (temp1 + temp2) / 2;
 FinFuncion
 
+
 //################################################################################
 //Crear una función que calcule la temperatura media de un día a partir de la 
 //temperatura máxima y mínima. Crear un programa principal que, utilizando la 

@@ -13,6 +13,7 @@ Funcion Intercambiar(mayor Por Referencia, menor Por Referencia)
 	FinSi
 FinFuncion
 
+
 //################################################################################
 //Función "CalcularMCD": Recibe dos números y devuelve el MCD utilizando el método 
 //de Euclides. El método de Euclides es el siguiente:
@@ -40,6 +41,7 @@ Funcion mcd <- CalcularMCD(num1, num2)
 		mcd <- CalcularMCD(num2, resto);
 	FinSi
 FinFuncion
+
 
 //################################################################################
 //Crear un programa principal que lea dos números enteros y muestre el MCD.

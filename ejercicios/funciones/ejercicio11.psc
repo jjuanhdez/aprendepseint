@@ -13,6 +13,7 @@ Funcion bisiesto <- esBisiesto(year)
 	FinSi
 FinFuncion
 
+
 //################################################################################
 //Función "diasDelMes": Recibe un mes y un año y devuelve el número de días que 
 //tiene ese mes en ese año. Necesita la función esBisiesto
@@ -36,8 +37,9 @@ Funcion dias <- diasDelMes(month, year)
 	FinSegun
 FinFuncion
 
+
 //################################################################################
-//Función "calcular_Dia_Juliano": Recibe un día, mes y año y devuelve el día juliano
+//Función "calcularDiaJuliano": Recibe un día, mes y año y devuelve el día juliano
 //correspondiente a esa fecha. El día juliano correspondiente a una fecha es un 
 //número entero que indica los días que han transcurrido desde el 1 de enero del 
 //año indicado. Depende de la función "diasDelMes"
@@ -45,7 +47,7 @@ FinFuncion
 //Dato devuelto: Día juliano
 //################################################################################
 
-Funcion diaj <- calcular_Dia_Juliano(day, month, year)
+Funcion diaj <- calcularDiaJuliano(day, month, year)
 	Definir mes Como Entero;
 	Definir diaj Como Entero;
 	diaj <- 0;
@@ -54,6 +56,7 @@ Funcion diaj <- calcular_Dia_Juliano(day, month, year)
 	FinPara
 	diaj <- diaj + day;
 FinFuncion
+
 
 //################################################################################
 //Procedimiento "leerFecha": Lee por teclado el día, mes y el año y lo devuelve

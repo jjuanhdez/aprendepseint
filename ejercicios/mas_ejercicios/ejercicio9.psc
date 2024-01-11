@@ -17,12 +17,12 @@ Funcion repetido <- estaRepetido(num, vector)
 FinFuncion
 
 //################################################################################
-//Procedimiento "GenerarSecuencia": Recibe un vector que se inicializa con 4 enteros 
+//Procedimiento "generarSecuencia": Recibe un vector que se inicializa con 4 enteros 
 //no repetidos
 //Parámetro de entrada y salida: Vector de 4 enteros
 //################################################################################
 
-Funcion GenerarSecuencia(vector Por Referencia)
+Funcion generarSecuencia(vector Por Referencia)
 	Definir indice Como Entero;
 	Definir num Como Entero;
 	//Se incializa el vector para que se pueda comprobar si tiene algún número repetido
@@ -40,13 +40,13 @@ Funcion GenerarSecuencia(vector Por Referencia)
 FinFuncion
 
 //################################################################################
-//Procedimiento "LeerSecuencia": Recibe un vector que se inicializa con 4 enteros 
+//Procedimiento "leerSecuencia": Recibe un vector que se inicializa con 4 enteros 
 //leídos por teclado por el usuario, asegurando de que no se introduce ninguno 
 //repetido.
 //Parámetro de entrada y salida: Vector de 4 enteros
 //################################################################################
 
-Funcion LeerSecuencia(vector Por Referencia)
+Funcion leerSecuencia(vector Por Referencia)
 	Definir i, num Como Entero;
 	Definir repetido Como Logico;
 	//Se inicializa el vector para que se pueda comprobar si tiene algún número repetido
@@ -68,14 +68,14 @@ Funcion LeerSecuencia(vector Por Referencia)
 FinFuncion
 
 //################################################################################
-//Procedimiento "ComprobarSecuencia": Recibe dos vectores, el secreto y el 
+//Procedimiento "comprobarSecuencia": Recibe dos vectores, el secreto y el 
 //introducido por el usuario y devuelve el número de coincidencias en la misma 
 //posición (muertos) y las coincidencias en distintas posición (heridos).
 //Parámetros de entrada: Dos vectores
 //Parámetro de entrada y salida: muertos y heridos
 //################################################################################
 
-Funcion ComprobarSecuencia(secreto, usuario, m Por Referencia, h Por Referencia)
+Funcion comprobarSecuencia(secreto, usuario, m Por Referencia, h Por Referencia)
 	Definir indice_secreto, indice_usuario Como Entero;
 	//recorro los dos vectores
 	Para indice_secreto <- 0 Hasta 3 Hacer
@@ -116,16 +116,16 @@ Proceso MisterMind
 	Dimension usuario[4];
 	
 	//Se genera el número secreto a adivinar
-	GenerarSecuencia(secreto);
+	generarSecuencia(secreto);
 	//Se repite hasta que se acierte, número de muertos = 4
 	intentos <- 0;
 	Repetir
 		//Leemos la secuencia propuesta por el usuario
-		LeerSecuencia(usuario);
+		leerSecuencia(usuario);
 		muertos <- 0;
 		heridos <- 0;
 		//Se comprueba la propuesta
-		ComprobarSecuencia(secreto, usuario, muertos, heridos);
+		comprobarSecuencia(secreto, usuario, muertos, heridos);
 		//Voy a guardar el numero, con el resultado
 		num <- "";
 		Para indice <- 0 Hasta 3 Hacer

@@ -13,6 +13,7 @@ Funcion inicializarCola(cola Por Referencia, size_cola)
 	FinPara
 FinFuncion
 
+
 //################################################################################
 //Función "longitudCola": Recibe un vector (cola) y su tamaño. 
 //Devuelve un contador con los elementos de la cola.
@@ -27,6 +28,7 @@ Funcion size <- longitudCola(cola, size_cola)
 		size <- size +1;
 	FinMientras
 FinFuncion
+
 
 //################################################################################
 //Función "estaVaciaCola": Recibe un vector (cola) y su tamaño. 
@@ -44,6 +46,7 @@ Funcion resultado <- estaVaciaCola(cola, size_cola)
 	FinSi
 FinFuncion
 
+
 //################################################################################
 //Función "estaLlenaCola": Recibe un vector (cola) y su tamaño. 
 //Devuelve un valor lógico indicando si la cola está llena.
@@ -59,6 +62,7 @@ Funcion resultado <- estaLlenaCola(cola, size_cola)
 		resultado <- Falso;
 	FinSi
 FinFuncion
+
 
 //################################################################################
 //Procedimiento "addCola": Recibe un vector (cola), su tamaño y un elemento (cadena)
@@ -76,6 +80,7 @@ Funcion addCola(cad, cola Por Referencia, size_cola)
 		Escribir "No se puede añadir elemento. La cola está llena.";
 	FinSi
 FinFuncion
+
 
 //################################################################################
 //Función "sacarDeLaCola": Recibe un vector (cola), su tamaño y devuelve 
@@ -104,6 +109,7 @@ Funcion cad <- sacarDeLaCola(cola Por Referencia, size_cola)
 	FinSi
 FinFuncion
 
+
 //################################################################################
 //Función "escribirCola": Recibe un vector (cola) y su tamaño. 
 //Muestra los elementos del vector Hasta que llegue al final o se encuentre un *.
@@ -119,6 +125,7 @@ Funcion escribirCola(cola, size_cola)
 	FinMientras
 	Escribir "";
 FinFuncion
+
 
 //################################################################################
 //Realiza un programa principal que nos permita usar funciones para manipular colas.

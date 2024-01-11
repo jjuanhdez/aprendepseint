@@ -35,7 +35,7 @@ Proceso Factorizacion
 			Escribir num;
 			factorizar <- Falso;
 		SiNo //Si no es primo, cáculo el nuevo número (num/div)y muestro el divisor
-			//Y vuelvo a intentar factorizar
+			 //Y vuelvo a intentar factorizar
 			Escribir div;
 			num <- num / div;
 			factor_primo <- Verdadero;

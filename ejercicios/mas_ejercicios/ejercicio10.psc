@@ -1,12 +1,12 @@
 //################################################################################
-//Procedimiento "LeerSecreto": Inicializamos la palabra secreta (no más de 20 
+//Procedimiento "leerSecreto": Inicializamos la palabra secreta (no más de 20 
 //caracteres) y el vector de aciertos a Falso.
 //Parámetro de entrada y salida: Palabra que hay que adivinar, y aciertos: vector
 //de valores lógicos que se inicializan a falso indicando que no se han acertado 
 //ninguna letra.
 //################################################################################
 
-Funcion LeerSecreto(secreto Por Referencia, aciertos Por Referencia)
+Funcion leerSecreto(secreto Por Referencia, aciertos Por Referencia)
 	Definir i Como Entero;
 	Repetir
 		Escribir "Introduce la palabra a adivinar: ";
@@ -22,14 +22,14 @@ Funcion LeerSecreto(secreto Por Referencia, aciertos Por Referencia)
 FinFuncion
 
 //################################################################################
-//Función "NumeroAciertos": Recibe el vector de aciertos y devuelve cuantas letras
+//Función "numeroAciertos": Recibe el vector de aciertos y devuelve cuantas letras
 //se han acertado (valores Verdadero).
 //Parámetro de entrada: aciertos: vector de valores lógicos que indica las letras
 //que se han acertado.
 //Dato devuelto: Número de letras acertadas
 //################################################################################
 
-Funcion num <- NumeroAciertos(aciertos)
+Funcion num <- numeroAciertos(aciertos)
 	Definir num, i Como Entero;
 	num <- 0;
 	Para i <- 0 Hasta 19 Hacer
@@ -40,7 +40,7 @@ Funcion num <- NumeroAciertos(aciertos)
 FinFuncion
 
 //################################################################################
-//Procedimiento "EscribirSecreto": Recibe la palabra secreta (no más de 20 
+//Procedimiento "escribirSecreto": Recibe la palabra secreta (no más de 20 
 //y el vector de aciertos. Y muestra por pantalla un carácter o un * según la 
 //posición del carácter indique en el vector aciertos que se ha acertado la letra 
 //(valor Verdadero)
@@ -48,7 +48,7 @@ FinFuncion
 //lógicos que indica las letras que se han acertado.
 //################################################################################
 
-Funcion EscribirSecreto(secreto, aciertos)
+Funcion escribirSecreto(secreto, aciertos)
 	Definir i Como Entero;
 	//Recorro la cadena de caracteres
 	Para i <- 0 Hasta Longitud(secreto)-1 Hacer
@@ -64,7 +64,7 @@ Funcion EscribirSecreto(secreto, aciertos)
 FinFuncion
 
 //################################################################################
-//Función "ComprobarSecreto": Recibe un carácter, la cadena a adivinar y el vector 
+//Función "comprobarSecreto": Recibe un carácter, la cadena a adivinar y el vector 
 //de aciertos y devuelve si el carácter está en la cadena. Además si es así cambia
 //en el vector aciertos las posiciones donde se encuentra el carácter de Falso a
 //Verdadero.
@@ -73,7 +73,7 @@ FinFuncion
 //Falso en caso contrario.
 //################################################################################
 
-Funcion acierto <- ComprobarSecreto(letra, secreto, aciertos Por Referencia)
+Funcion acierto <- comprobarSecreto(letra, secreto, aciertos Por Referencia)
 	Definir i Como Entero;
 	Definir acierto Como Logico;
 	acierto <- Falso;
@@ -87,13 +87,13 @@ Funcion acierto <- ComprobarSecreto(letra, secreto, aciertos Por Referencia)
 FinFuncion
 
 //################################################################################
-//Procedimiento "LeerLetra": Lee un carácter por teclado y lo devuelve. Además 
+//Procedimiento "leerLetra": Lee un carácter por teclado y lo devuelve. Además 
 //devuelve un cadena con las letras que se han leído anteriormente.
 //Parámetro de entrada y salida: la letra leída por teclado, y la cadena con todas 
 //las letras leídas anteriormente.
 //################################################################################
 
-Funcion LeerLetra(letra Por Referencia, letras Por Referencia)
+Funcion leerLetra(letra Por Referencia, letras Por Referencia)
 	Repetir
 		Escribir Sin Saltar "Introduce una letra: ";
 		Leer letra;
@@ -105,12 +105,12 @@ Funcion LeerLetra(letra Por Referencia, letras Por Referencia)
 FinFuncion
 
 //################################################################################
-//Procedimiento "MostarAhorcado": Recibe el número de fallos, y según el valor muestra 
-//el nivel de "ahorcamiento" que lleva el jugador.
+//Procedimiento "mostarAhorcado": Recibe el número de fallos, y según el valor 
+//muestra el nivel de "ahorcamiento" que lleva el jugador.
 //Parámetro de entrada: Número de fallos
 //################################################################################
 
-Funcion MostrarAhorcado(fallos)
+Funcion mostrarAhorcado(fallos)
 	Escribir "";
 	Escribir "La horca!!!";
 	Escribir "";
@@ -195,13 +195,13 @@ Proceso Ahorcado
 	letras <- "";
 	num_fallos <- 0;
 	//Se introduce por teclado la palabra secreta a adivinar
-	LeerSecreto(secreto, aciertos);
+	leerSecreto(secreto, aciertos);
 	//Se repite Hasta que el número de aciertos sea igual a la longitud de la palabra o el número de fallos sea 6
 	Repetir
 		
 		Borrar Pantalla;
 		//Se escribe la palabra (* las letras no acertadas)
-		EscribirSecreto(secreto, aciertos);
+		escribirSecreto(secreto, aciertos);
 		
 		//Se muestra el dibujo del ahorcado, se haya acertado o no.
 		MostrarAhorcado(num_fallos);
@@ -210,18 +210,18 @@ Proceso Ahorcado
 		Escribir "Letras introducidas: ", letras;
 		
 		//Se lee una letra y se actualiza las letras leídas
-		LeerLetra(letra, letras);
+		leerLetra(letra, letras);
 		//Si no hemos acertado la letra mostramos mensaje de error e incrementamos número de fallos.
-		Si no ComprobarSecreto(letra, secreto, aciertos) Entonces
+		Si no comprobarSecreto(letra, secreto, aciertos) Entonces
 			num_fallos <- num_fallos +1;
 		FinSi
-	Hasta Que NumeroAciertos(aciertos) = Longitud(secreto) O num_fallos = 8;
+	Hasta Que numeroAciertos(aciertos) = Longitud(secreto) O num_fallos = 8;
 	//Podemos salir del bucle por dos razones
 	//Si el número de fallos es 6 hemos perdido	
 	
 	Si num_fallos = 8 Entonces
 		Borrar Pantalla;
-		EscribirSecreto(secreto, aciertos);
+		escribirSecreto(secreto, aciertos);
 		MostrarAhorcado(num_fallos);
 		Escribir "Has perdido!!!";
 	SiNo    //Hemos ganado!!!!

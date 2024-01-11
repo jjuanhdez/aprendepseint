@@ -13,6 +13,7 @@ Funcion inicializarPila(pila Por Referencia, size_pila)
 	FinPara
 FinFuncion
 
+
 //################################################################################
 //Función "longitudPila": Recibe un vector (pila) y su tamaño. 
 //Devuelve un contador con los elementos de la pila.
@@ -27,6 +28,7 @@ Funcion size <- longitudPila(pila, size_pila)
 		size <- size +1;
 	FinMientras
 FinFuncion
+
 
 //################################################################################
 //Función "estaVaciaPila": Recibe un vector (pila) y su tamaño. 
@@ -44,6 +46,7 @@ Funcion resultado <- estaVaciaPila(pila, size_pila)
 	FinSi
 FinFuncion
 
+
 //################################################################################
 //Función "estaLlenaPila": Recibe un vector (pila) y su tamaño. 
 //Devuelve un valor lógico indicando si la pila está llena.
@@ -59,6 +62,7 @@ Funcion resultado <- estaLlenaPila(pila, size_pila)
 		resultado <- Falso;
 	FinSi
 FinFuncion
+
 
 //################################################################################
 //Procedimiento "addPila": Recibe un vector (pila), su tamaño y un elemento (cadena)
@@ -76,6 +80,7 @@ Funcion addPila(cad, pila Por Referencia, size_pila)
 		Escribir "No se puede añadir elemento. La pila está llena.";
 	FinSi
 FinFuncion
+
 
 //################################################################################
 //Función "sacarDeLaPila": Recibe un vector (pila), su tamaño y devuelve 
@@ -99,6 +104,7 @@ Funcion cad <- sacarDeLaPila(pila Por Referencia, size_pila)
 	FinSi
 FinFuncion
 
+
 //################################################################################
 //Función "escribirPila": Recibe un vector (pila) y su tamaño. 
 //Muestra los elementos del vector hasta que llegue al final o se encuentre un *.
@@ -114,6 +120,7 @@ Funcion escribirPila(pila, size_pila)
 	FinMientras
 	Escribir "";
 FinFuncion
+
 
 //################################################################################
 //Realiza un programa principal que nos permita usar funciones para manipular pilas.

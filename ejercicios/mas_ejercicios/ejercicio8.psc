@@ -168,8 +168,7 @@ Funcion Calendario(month, year)
 FinFuncion
 
 //################################################################################
-//Realizar un programa que pida un mes y un año (superior a 1900) y muestre el 
-//calendario del mes 
+//Programa que pida un mes y un año (superior a 1900) y muestre el calendario del mes 
 //################################################################################
 
 Proceso ProgramaCalendario

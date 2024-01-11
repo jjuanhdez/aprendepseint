@@ -18,6 +18,7 @@ Funcion cad_con_espacios <- ConvertirEspaciado(cad)
 	FinPara
 FinFuncion
 
+
 //################################################################################
 //Crea un función "ConvertirEspaciado", que reciba como parámetro un texto y 
 //devuelva una cadena con un espacio adicional tras cada letra. Por ejemplo, 

@@ -1,10 +1,10 @@
 //################################################################################
-//Procedimiento "Intercambiar": Recibe dos números como parámetros de entrada y 
+//Procedimiento "intercambiar": Recibe dos números como parámetros de entrada y 
 //salida e intercambia sus valores si el segundo es mayor que el primero.
 //Parámetros de entrada y salida: dos números
 //################################################################################
 
-Funcion Intercambiar(mayor Por Referencia, menor Por Referencia)
+Funcion intercambiar(mayor Por Referencia, menor Por Referencia)
 	Definir aux como Entero;
 	Si mayor < menor Entonces
 		aux <- mayor;
@@ -12,6 +12,7 @@ Funcion Intercambiar(mayor Por Referencia, menor Por Referencia)
 		menor <- aux;
 	FinSi
 FinFuncion
+
 
 //################################################################################
 //Función "calcularMCD": Recibe dos números y devuelve el MCD utilizando el método 
@@ -28,7 +29,7 @@ FinFuncion
 Funcion mcd <- calcularMCD(num1, num2)
 	Definir mcd Como Entero;
 	definir resto Como Entero;
-	Intercambiar(num1, num2);
+	intercambiar(num1, num2);
 	resto <- num1 % num2;
 	Si resto = 0 Entonces
 		mcd <- num2;
@@ -36,6 +37,7 @@ Funcion mcd <- calcularMCD(num1, num2)
 		mcd <- calcularMCD(num2, resto);
 	FinSi
 FinFuncion
+
 
 //################################################################################
 //Procedimiento "leerFraccion": Lee por teclado una fracción (numerador y denominador)
@@ -52,6 +54,7 @@ Funcion leerFraccion(num Por Referencia, den Por Referencia)
 	simplificarFraccion(num,den);
 FinFuncion
 
+
 //################################################################################
 //Procedimiento "simplificarFraccion": Recibe una fracción (numerador y denominador)
 //y lo devuelve la fracción simplificada como parámetro ed entrada y salida.
@@ -66,6 +69,7 @@ Funcion simplificarFraccion(num Por Referencia, den Por Referencia)
 	num <- num / mcd;
 	den <- den / mcd;
 FinFuncion
+
 
 //################################################################################
 //Procedimiento "escribirFraccion": Recibe una fracción (numerador y denominador)
@@ -86,6 +90,7 @@ Funcion escribirFraccion(num, den)
 	FinSi
 FinFuncion
 
+
 //################################################################################
 //Procedimiento "sumarFracciones": Recibe dos fracciones (numerador y denominador)
 //y devuelve otra fracción que es la suma de la primera y la segunda.
@@ -101,6 +106,7 @@ Funcion sumarFracciones(n1, d1, n2, d2, nr Por Referencia,dr Por Referencia)
 	dr <- d1 * d2;
 	simplificarFraccion(nr,dr);
 FinFuncion
+
 
 //################################################################################
 //Procedimiento "restarFracciones": Recibe dos fracciones (numerador y denominador)
@@ -118,6 +124,7 @@ Funcion restarFracciones(n1, d1, n2, d2, nr Por Referencia,dr Por Referencia)
 	simplificarFraccion(nr,dr);
 FinFuncion
 
+
 //################################################################################
 //Procedimiento "multiplicarFracciones": Recibe dos fracciones (numerador y denominador)
 //y devuelve otra fracción que es el producto de la primera y la segunda.
@@ -134,6 +141,7 @@ Funcion multiplicarFracciones(n1, d1, n2, d2, nr Por Referencia,dr Por Referenci
 	simplificarFraccion(nr,dr);
 FinFuncion
 
+
 //################################################################################
 //Procedimiento "dividirFracciones": Recibe dos fracciones (numerador y denominador)
 //y devuelve otra fracción que es la división de la primera y la segunda.
@@ -149,6 +157,7 @@ Funcion dividirFracciones(n1, d1, n2, d2, nr Por Referencia,dr Por Referencia)
 	dr <- d1 * n2;
 	simplificarFraccion(nr, dr);
 FinFuncion
+
 
 //################################################################################
 //Crear un programa que, utilizando las funciones anteriores, muestre un menú para 

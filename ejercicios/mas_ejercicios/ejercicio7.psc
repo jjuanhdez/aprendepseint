@@ -11,7 +11,7 @@ Funcion num <- devolverNumero(liminf, limsup)
 FinFuncion
 
 //################################################################################
-//Función "LeerOpcion": Recibe un intervalo (límite inferior y superior) y el número 
+//Función "leerOpcion": Recibe un intervalo (límite inferior y superior) y el número 
 //que ha propuesto Como solución y devuelve la opción escogida:
 // 'S', si es correcto.
 // 'A', si es más alto que el número a adivinar.
@@ -24,7 +24,7 @@ FinFuncion
 //Dato devuelto: Opción escogida
 //################################################################################
 
-Funcion opcion <- LeerOpcion(num, liminf Por Referencia, limsup Por Referencia)
+Funcion opcion <- leerOpcion(num, liminf Por Referencia, limsup Por Referencia)
 	Definir opcion Como Caracter;
 	Repetir
 		Escribir "¿Es correcto?";
@@ -42,19 +42,19 @@ Funcion opcion <- LeerOpcion(num, liminf Por Referencia, limsup Por Referencia)
 FinFuncion
 
 //################################################################################
-//Diseñar un programa que permita adivinar a la computadora un determinado número
-//entero y positivo para lo cual se deben leer los límites en los que está 
-//comprendido dicho número.
-//################################################################################						
+//Programa que permita adivinar a la computadora un determinado número entero y 
+//positivo para lo cual se deben leer los límites en los que está comprendido dicho 
+//número.
+//################################################################################
 
 Proceso AdivinarNumero
 	Definir limite_inferior, limite_superior, minumero Como Entero;
-	Definir opcion Como Caracter;
+	Definir oppcion Como Caracter;
 	Definir intentos Como Entero;
 	intentos <- 0;
 	Escribir "Piensa un número...";
 	//Se pide el primer intervalo
-	Escribir "Necesito saber el intervalo donde se encuentra el número: ";
+	Escribir "Necesito saber el intervalo donde se encuentra el número.";
 	Escribir Sin Saltar "Límite inferior: "; 
 	Leer limite_inferior;
 	Escribir Sin Saltar "Límite superior: "; 
@@ -68,8 +68,8 @@ Proceso AdivinarNumero
 		intentos <- intentos +1;
 		//Leemos la opción, si no ha acertado se modifica alguno de los límites 
 		//y se vuelve a proponer un nuevo número
-		opcion <- LeerOpcion(minumero, limite_inferior, limite_superior);
-	Hasta Que Mayusculas(opcion) = "S";
+		oppcion <- LeerOpcion(minumero, limite_inferior, limite_superior);
+	Hasta Que Mayusculas(oppcion) = "S";
 	//Se escribe los intentos que ha necesitado para acertarlo
 	Escribir "Lo he acertado en ", intentos, " intentos.";
 FinProceso

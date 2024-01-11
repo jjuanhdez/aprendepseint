@@ -18,6 +18,7 @@ Funcion esLogin <- Login(nombre, pass, intentos por referencia)
 	FinSi
 FinFuncion
 
+
 //################################################################################
 //Crear una subrutina llamada "Login" que reciba un nombre de usuario y una 
 //contraseña y devuelva Verdadero si el nombre de usuario es "usuario1" y la 
@@ -40,7 +41,7 @@ Proceso EntrarEnElSistema
 		//Llamo a la función y le envío el nombre y la contraseña
 		//Devuelve verdadero o falso según haya indicado bien los datos
 		//Incrementa la variable "cuantasveces" que es un contador de intentos
-		entrar <- Login(usuario, clave, cuantasveces);
+		entrar <- esLogin(usuario, clave, cuantasveces);
 		Si No entrar Entonces
 			Escribir "Error. Nombre de usuario o contraseña incorrecta.";
 		FinSi

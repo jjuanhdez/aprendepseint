@@ -24,21 +24,21 @@ FinFuncion
 //################################################################################
 
 Funcion InicializaBilletesMonedas(cantidades Por Referencia)
-	cantidades[0] <- 500;
-	cantidades[1] <- 200;
-	cantidades[2] <- 100;
-	cantidades[3] <- 50;
-	cantidades[4] <- 20;
-	cantidades[5] <- 10;
-	cantidades[6] <- 5;
-	cantidades[7] <- 2;
-	cantidades[8] <- 1;
-	cantidades[9] <- 0.50;
-	cantidades[10] <- 0.20;
-	cantidades[11] <- 0.10;
-	cantidades[12] <- 0.05;
-	cantidades[13] <- 0.02;
-	cantidades[14] <- 0.01;
+	cantidades[1] <- 500;
+	cantidades[2] <- 200;
+	cantidades[3] <- 100;
+	cantidades[4] <- 50;
+	cantidades[5] <- 20;
+	cantidades[6] <- 10;
+	cantidades[7] <- 5;
+	cantidades[8] <- 2;
+	cantidades[9] <- 1;
+	cantidades[10] <- 0.50;
+	cantidades[11] <- 0.20;
+	cantidades[12] <- 0.10;
+	cantidades[13] <- 0.05;
+	cantidades[14] <- 0.02;
+	cantidades[15] <- 0.01;
 FinFuncion
 
 //################################################################################
@@ -88,8 +88,9 @@ Proceso Devolucion
 	//Incializamos las cantidades de billetes o monedas
 	InicializaBilletesMonedas(cantidades);
 	//Por cada cantidad, calculamos la vuelta e imprimimos lo que hay que devolver
-	Para indice <- 0 Hasta 14 Hacer
+	Para indice <- 1 Hasta 15 Hacer
 		vuelta <- CalcularVuelta(dinero, cantidades[indice]);
 		EscribirVuelta(vuelta, cantidades[indice]);
+		//EscribirVuelta(1230, cantidades[indice]);
 	FinPara
 FinProceso

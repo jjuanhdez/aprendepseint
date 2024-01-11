@@ -10,6 +10,7 @@ Funcion CalcularAreaPerimetro(radio, area por Referencia, perimetro Por Referenc
 	perimetro <- 2 * PI * radio;
 FinFuncion
 
+
 //################################################################################
 //Diseñar una función que calcule el área y el perímetro de una circunferencia. 
 //Utiliza dicha función en un programa principal que lea el radio de una 

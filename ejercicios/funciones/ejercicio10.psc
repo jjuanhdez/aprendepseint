@@ -10,6 +10,7 @@ Funcion seg <- Convertir_A_Segundos(h, m, s)
 	seg <- h * 3600 + m * 60 + s;
 FinFuncion
 
+
 //################################################################################
 //Función "Convertir_A_HMS": Recibe una cantidad de segundos y debe calcular a 
 //que hora, minutos y segundos corresponde 
@@ -29,6 +30,7 @@ Funcion Convertir_A_HMS(seg, h Por Referencia, m Por Referencia, s Por Referenci
 	//Lo que me quedan corresponden a los segundos
 	s <- seg;
 FinFuncion
+
 
 //################################################################################
 //Escribir un programa principal con un menú donde se pueda elegir la opción de 
