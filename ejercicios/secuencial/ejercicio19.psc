@@ -22,6 +22,6 @@ Proceso CalcularPuntos
 	Leer correctas;
 	Escribir Sin Saltar "Dime cantidad de respuestas incorrectas:";
 	Leer incorrectas;
-	puntos <- correctas * 5 + incorrectas * (-1);
+	puntos <- correctas * 5 - incorrectas;
 	Escribir "Puntos: ", puntos;
 FinProceso

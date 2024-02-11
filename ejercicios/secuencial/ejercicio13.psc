@@ -18,7 +18,7 @@
 
 Proceso CalcularRaices
 	Definir num como Entero;
-	Escribir "Dime un número:";
+	Escribir "Ingresa un número:";
 	Leer num;
 	Escribir "Raíz cuadrada:", raiz(num);
 	Escribir "Raíz cúbica:", num ^ (1/3);
