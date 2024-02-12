@@ -1,7 +1,7 @@
 //################################################################################
 //Una empresa paga a sus empleados en base a las horas trabajadas en la semana. 
 //Realice un algoritmo para determinar el sueldo semanal de N trabajadores y
-//y calcule cuánto pagó la empresa por los N empleados.
+//calcule cuánto pagó la empresa por los N empleados.
 //################################################################################
 //Análisis
 //Hay que calcular el sueldo de un número de trabajadores, por lo tanto 
